@@ -318,6 +318,14 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   color: var(--color-text-muted);
   font-size: 0.95rem;
 }
+.price-disclaimer {
+  max-width: 640px;
+  margin: 14px auto 0;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
 
 /* ---------- Zusatzleistungen ---------- */
 .addon-list {
@@ -533,6 +541,7 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   background: #fff;
 }
 .form-status { font-size: 0.88rem; min-height: 1.2em; color: var(--color-primary); font-weight: 600; }
+.hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
 .form-consent { font-size: 0.8rem; color: var(--color-text-muted); text-align: center; }
 .form-consent a { color: var(--color-text-muted); text-decoration: underline; }
 
