@@ -45,20 +45,43 @@ const revealObserver = new IntersectionObserver(
 );
 revealItems.forEach((item) => revealObserver.observe(item));
 
-// Contact form — no backend attached yet, replace with a real endpoint before going live
+// Contact form — submits to Formspree (see the form's action attribute for the endpoint)
 const form = document.getElementById('kontaktForm');
 const formStatus = document.getElementById('formStatus');
+const submitButton = form.querySelector('button[type="submit"]');
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', async (event) => {
   event.preventDefault();
   if (!form.checkValidity()) {
-    formStatus.textContent = 'Bitte füllen Sie alle Pflichtfelder korrekt aus.';
     formStatus.style.color = '#dc2626';
+    formStatus.textContent = 'Bitte füllen Sie alle Pflichtfelder korrekt aus.';
     return;
   }
+
+  submitButton.disabled = true;
   formStatus.style.color = '';
-  formStatus.textContent = 'Danke! Ihre Nachricht wurde übermittelt. Wir melden uns in Kürze.';
-  form.reset();
+  formStatus.textContent = 'Wird gesendet …';
+
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' },
+    });
+
+    if (response.ok) {
+      formStatus.style.color = '';
+      formStatus.textContent = 'Danke! Ihre Nachricht wurde übermittelt. Wir melden uns in Kürze.';
+      form.reset();
+    } else {
+      throw new Error('Formspree request failed');
+    }
+  } catch (error) {
+    formStatus.style.color = '#dc2626';
+    formStatus.textContent = 'Leider ist etwas schiefgelaufen. Schreiben Sie uns gerne direkt an kontakt@klarwerk.de.';
+  } finally {
+    submitButton.disabled = false;
+  }
 });
 
 // Footer year
