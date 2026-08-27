@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café Feldweg — Demo-Website von Klarwerk</title>
+<meta name="description" content="Demo-Website für ein Café, erstellt von Klarwerk. Kein reales Café.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%23b5502f%22/><text x=%2250%22 y=%2270%22 font-family=%22Georgia, serif%22 font-weight=%22700%22 font-size=%2254%22 fill=%22white%22 text-anchor=%22middle%22>F</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="demo-flag">Demo-Website von <a href="../../index.html">Klarwerk</a> — kein reales Café</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo">
+      <svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true">
+        <rect width="100" height="100" rx="24" fill="#b5502f"/>
+        <text x="50" y="70" font-family="Georgia, serif" font-weight="700" font-size="54" fill="white" text-anchor="middle">F</text>
+      </svg>
+      <span>Café Feldweg</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="#speisekarte">Speisekarte</a></li>
+        <li><a href="#ueber-uns">Über uns</a></li>
+        <li><a href="#oeffnungszeiten">Öffnungszeiten</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="#kontakt" class="btn btn-primary btn-sm">Tisch reservieren</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Café &amp; kleine Küche</p>
+        <h1>Guten Kaffee gibt's am Feldweg.</h1>
+        <p class="hero-lead">
+          Frühstück, Mittagstisch und hausgemachter Kuchen in gemütlicher
+          Atmosphäre — mit Terrasse, frisch geröstetem Kaffee und einer
+          Küche, die auf Saisonales setzt.
+        </p>
+        <div class="hero-cta">
+          <a href="#kontakt" class="btn btn-primary">Tisch reservieren</a>
+          <a href="#speisekarte" class="btn btn-ghost">Speisekarte ansehen</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="cup-mock">
+          <div class="cup"></div>
+          <div class="steam s1"></div>
+          <div class="steam s2"></div>
+          <div class="steam s3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="speisekarte">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Speisekarte</p>
+        <h2>Eine kleine Auswahl</h2>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-col reveal">
+          <h3>Frühstück</h3>
+          <div class="menu-item"><span>Feldweg-Frühstück</span><strong>9,50 €</strong></div>
+          <div class="menu-item"><span>Rühreier mit Sauerteigbrot</span><strong>7,90 €</strong></div>
+          <div class="menu-item"><span>Porridge mit Beeren</span><strong>6,50 €</strong></div>
+        </div>
+        <div class="menu-col reveal">
+          <h3>Mittagstisch</h3>
+          <div class="menu-item"><span>Suppe des Tages</span><strong>5,90 €</strong></div>
+          <div class="menu-item"><span>Saisonaler Salat</span><strong>10,50 €</strong></div>
+          <div class="menu-item"><span>Tagesgericht</span><strong>12,90 €</strong></div>
+        </div>
+        <div class="menu-col reveal">
+          <h3>Kaffee &amp; Kuchen</h3>
+          <div class="menu-item"><span>Flat White</span><strong>3,80 €</strong></div>
+          <div class="menu-item"><span>Kuchen des Tages</span><strong>4,50 €</strong></div>
+          <div class="menu-item"><span>Heiße Schokolade</span><strong>4,20 €</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="ueber-uns">
+    <div class="container about-split reveal">
+      <div class="about-visual" aria-hidden="true"></div>
+      <div>
+        <p class="eyebrow">Über uns</p>
+        <h2>Ein Café zum Ankommen</h2>
+        <p class="section-lead">
+          Café Feldweg ist ein Ort zum Verweilen — mit Nachbarschaftsflair,
+          ehrlicher Küche und Kaffee, den wir mit Sorgfalt zubereiten. Ob
+          Frühstück allein, Mittagspause im Team oder Kuchen mit Freunden:
+          bei uns ist Platz für alle.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="oeffnungszeiten">
+    <div class="container hours-wrap reveal">
+      <p class="eyebrow">Öffnungszeiten</p>
+      <h2>Wann wir für Sie da sind</h2>
+      <table class="hours-table">
+        <tbody>
+          <tr><td>Dienstag – Freitag</td><td>08:00 – 18:00 Uhr</td></tr>
+          <tr><td>Samstag &amp; Sonntag</td><td>09:00 – 16:00 Uhr</td></tr>
+          <tr><td>Montag</td><td>Ruhetag</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section section-alt kontakt" id="kontakt">
+    <div class="container kontakt-grid">
+      <div class="reveal">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Tisch reservieren</h2>
+        <p class="section-lead">Für Gruppen ab 6 Personen bitten wir um eine Reservierung.</p>
+        <ul class="kontakt-details">
+          <li>📞 04 31 / 555 04 56 (Beispiel)</li>
+          <li>📍 Kiel</li>
+        </ul>
+      </div>
+      <form class="kontakt-form reveal" id="demoForm" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-row">
+          <label for="personen">Personenzahl &amp; Wunschtermin</label>
+          <textarea id="personen" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Reservierung anfragen</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="logo"><span>Café Feldweg</span></span>
+    <p class="footer-copy">&copy; <span id="year"></span> — Demo-Website, erstellt von <a href="../../index.html">Klarwerk</a></p>
+  </div>
+</footer>
+
+<script src="../demo-common.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praxis Vitalpunkt — Demo-Website von Klarwerk</title>
+<meta name="description" content="Demo-Website für eine Physiotherapie-Praxis, erstellt von Klarwerk. Keine reale Praxis.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%232f8f8a%22/><text x=%2250%22 y=%2270%22 font-family=%22Arial, sans-serif%22 font-weight=%22700%22 font-size=%2254%22 fill=%22white%22 text-anchor=%22middle%22>V</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="demo-flag">Demo-Website von <a href="../../index.html">Klarwerk</a> — keine reale Praxis</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo">
+      <svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true">
+        <rect width="100" height="100" rx="24" fill="#2f8f8a"/>
+        <text x="50" y="70" font-family="Arial, sans-serif" font-weight="700" font-size="54" fill="white" text-anchor="middle">V</text>
+      </svg>
+      <span>Praxis Vitalpunkt</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="#behandlungen">Behandlungen</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#sprechzeiten">Sprechzeiten</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="#kontakt" class="btn btn-primary btn-sm">Termin anfragen</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Physiotherapie &amp; Rehabilitation</p>
+        <h1>Beweglich bleiben, schmerzfrei leben.</h1>
+        <p class="hero-lead">
+          In der Praxis Vitalpunkt begleiten wir Sie mit individueller
+          Physiotherapie — bei akuten Beschwerden, nach Verletzungen oder
+          zur Vorbeugung. Persönlich, kompetent, wohnortnah.
+        </p>
+        <div class="hero-cta">
+          <a href="#kontakt" class="btn btn-primary">Termin anfragen</a>
+          <a href="#behandlungen" class="btn btn-ghost">Behandlungen ansehen</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="calm-shape">
+          <div class="calm-ring ring-1"></div>
+          <div class="calm-ring ring-2"></div>
+          <div class="calm-ring ring-3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="behandlungen">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Behandlungen</p>
+        <h2>Unser Leistungsspektrum</h2>
+      </div>
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <div class="card-icon">🧘</div>
+          <h3>Krankengymnastik</h3>
+          <p>Gezielte Übungen zur Wiederherstellung von Beweglichkeit und Kraft.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">🤲</div>
+          <h3>Manuelle Therapie</h3>
+          <p>Handgriffe zur Behandlung von Funktionsstörungen an Gelenken und Muskulatur.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">💆</div>
+          <h3>Massage</h3>
+          <p>Lockerung verspannter Muskulatur und Förderung der Durchblutung.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">🏃</div>
+          <h3>Rehabilitation</h3>
+          <p>Begleitung nach Operationen und Verletzungen, individuell abgestimmt.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">🛡️</div>
+          <h3>Prävention</h3>
+          <p>Kurse und Übungsprogramme, um Beschwerden vorzubeugen.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">🏠</div>
+          <h3>Hausbesuche</h3>
+          <p>Auf Anfrage behandeln wir Sie auch bei eingeschränkter Mobilität zuhause.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="team">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Team</p>
+        <h2>Ihre Ansprechpartner</h2>
+      </div>
+      <div class="grid grid-3">
+        <article class="team-card reveal">
+          <div class="team-avatar">A</div>
+          <h3>Anna</h3>
+          <p>Physiotherapeutin, Schwerpunkt Manuelle Therapie</p>
+        </article>
+        <article class="team-card reveal">
+          <div class="team-avatar">T</div>
+          <h3>Tom</h3>
+          <p>Physiotherapeut, Schwerpunkt Sportrehabilitation</p>
+        </article>
+        <article class="team-card reveal">
+          <div class="team-avatar">L</div>
+          <h3>Lena</h3>
+          <p>Physiotherapeutin, Schwerpunkt Prävention</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sprechzeiten">
+    <div class="container sprechzeiten-grid reveal">
+      <div>
+        <p class="eyebrow">Sprechzeiten</p>
+        <h2>Wann Sie uns erreichen</h2>
+        <p class="section-lead">Termine nach Vereinbarung — auch außerhalb der Sprechzeiten in dringenden Fällen.</p>
+      </div>
+      <table class="hours-table">
+        <tbody>
+          <tr><td>Montag – Donnerstag</td><td>08:00 – 18:00 Uhr</td></tr>
+          <tr><td>Freitag</td><td>08:00 – 14:00 Uhr</td></tr>
+          <tr><td>Samstag / Sonntag</td><td>geschlossen</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section section-alt kontakt" id="kontakt">
+    <div class="container kontakt-grid">
+      <div class="reveal">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Termin anfragen</h2>
+        <p class="section-lead">Schreiben Sie uns kurz Ihr Anliegen — wir melden uns mit einem Terminvorschlag.</p>
+        <ul class="kontakt-details">
+          <li>📞 04 31 / 555 09 87 (Beispiel)</li>
+          <li>📍 Kiel</li>
+        </ul>
+      </div>
+      <form class="kontakt-form reveal" id="demoForm" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-row">
+          <label for="anliegen">Ihr Anliegen</label>
+          <textarea id="anliegen" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Termin anfragen</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="logo"><span>Praxis Vitalpunkt</span></span>
+    <p class="footer-copy">&copy; <span id="year"></span> — Demo-Website, erstellt von <a href="../../index.html">Klarwerk</a></p>
+  </div>
+</footer>
+
+<script src="../demo-common.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tischlerei Nordholz — Demo-Website von Klarwerk</title>
+<meta name="description" content="Demo-Website für einen Handwerksbetrieb, erstellt von Klarwerk. Kein reales Unternehmen.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%238a5a2b%22/><text x=%2250%22 y=%2270%22 font-family=%22Georgia, serif%22 font-weight=%22700%22 font-size=%2254%22 fill=%22white%22 text-anchor=%22middle%22>N</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="demo-flag">Demo-Website von <a href="../../index.html">Klarwerk</a> — kein reales Unternehmen</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo">
+      <svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true">
+        <rect width="100" height="100" rx="24" fill="#8a5a2b"/>
+        <text x="50" y="70" font-family="Georgia, serif" font-weight="700" font-size="54" fill="white" text-anchor="middle">N</text>
+      </svg>
+      <span>Tischlerei Nordholz</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#projekte">Projekte</a></li>
+        <li><a href="#ueber-uns">Über uns</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="#kontakt" class="btn btn-primary btn-sm">Angebot anfragen</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Tischlerei &amp; Innenausbau seit drei Generationen</p>
+        <h1>Handwerk, das Bestand hat.</h1>
+        <p class="hero-lead">
+          Möbel, Einbauten und Renovierungen aus Massivholz — geplant,
+          gefertigt und montiert von einem Familienbetrieb, der auf
+          Qualität statt Massenware setzt.
+        </p>
+        <div class="hero-cta">
+          <a href="#kontakt" class="btn btn-primary">Kostenlose Beratung</a>
+          <a href="#projekte" class="btn btn-ghost">Projekte ansehen</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="wood-panel">
+          <div class="wood-grain"></div>
+          <div class="wood-grain"></div>
+          <div class="wood-grain"></div>
+          <div class="wood-grain"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="leistungen">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Leistungen</p>
+        <h2>Von der Idee bis zur Montage</h2>
+      </div>
+      <div class="grid grid-4">
+        <article class="card reveal">
+          <h3>Möbelbau nach Maß</h3>
+          <p>Individuelle Möbel, exakt auf Ihren Raum und Ihre Wünsche zugeschnitten.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Innenausbau</h3>
+          <p>Einbauschränke, Regale und Verkleidungen aus hochwertigem Massivholz.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Renovierung &amp; Sanierung</h3>
+          <p>Fachgerechte Erneuerung von Türen, Fenstern und Holzkonstruktionen.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Reparatur &amp; Restaurierung</h3>
+          <p>Wir geben alten Möbelstücken und Holzelementen neuen Glanz.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="projekte">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Projekte</p>
+        <h2>Ausgewählte Arbeiten</h2>
+      </div>
+      <div class="grid grid-3">
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-a"></div>
+          <div class="project-info"><h3>Einbauschrank</h3><p>Massivholz, Schlafzimmer</p></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-b"></div>
+          <div class="project-info"><h3>Küchenumbau</h3><p>Eiche, offene Wohnküche</p></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-c"></div>
+          <div class="project-info"><h3>Terrassenüberdachung</h3><p>Lärchenholz, Garten</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ueber-uns">
+    <div class="container about-split reveal">
+      <div>
+        <p class="eyebrow">Über uns</p>
+        <h2>Handwerk mit Familientradition</h2>
+        <p class="section-lead">
+          Die Tischlerei Nordholz wird seit drei Generationen als
+          Familienbetrieb geführt. Wir verbinden traditionelles
+          Tischlerhandwerk mit moderner Planung — für Möbel und Einbauten,
+          die lange halten.
+        </p>
+      </div>
+      <ul class="fact-list">
+        <li><strong>3</strong><span>Generationen Erfahrung</span></li>
+        <li><strong>100%</strong><span>Massivholz &amp; regionale Materialien</span></li>
+        <li><strong>Meisterbetrieb</strong><span>zertifiziert</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-alt kontakt" id="kontakt">
+    <div class="container kontakt-grid">
+      <div class="reveal">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Fordern Sie Ihr Angebot an</h2>
+        <p class="section-lead">Beschreiben Sie kurz Ihr Vorhaben — wir melden uns mit einem unverbindlichen Angebot.</p>
+        <ul class="kontakt-details">
+          <li>📞 04 31 / 555 01 23 (Beispiel)</li>
+          <li>📍 Kiel</li>
+        </ul>
+      </div>
+      <form class="kontakt-form reveal" id="demoForm" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-row">
+          <label for="nachricht">Ihr Vorhaben</label>
+          <textarea id="nachricht" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Angebot anfragen</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="logo"><span>Tischlerei Nordholz</span></span>
+    <p class="footer-copy">&copy; <span id="year"></span> — Demo-Website, erstellt von <a href="../../index.html">Klarwerk</a></p>
+  </div>
+</footer>
+
+<script src="../demo-common.js"></script>
+</body>
+</html>
