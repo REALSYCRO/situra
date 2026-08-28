@@ -2,3 +2,6 @@
 Thumbs.db
 node_modules/
 .env
+
+# Akquise-Liste enthält später echte Interessenten-Daten - nicht für Git/GitHub
+intern/akquise-liste.csv
