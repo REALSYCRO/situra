@@ -554,16 +554,6 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 .legal-content ul { list-style: disc; padding-left: 22px; margin-bottom: 12px; }
 .legal-content li { font-size: 0.96rem; margin-bottom: 6px; }
 .legal-content a { color: var(--color-primary); text-decoration: underline; }
-.legal-note {
-  background: var(--color-primary-light);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  padding: 14px 18px;
-  font-size: 0.86rem;
-  color: var(--color-text-muted);
-  margin: 14px 0 20px;
-}
-
 /* ---------- Footer ---------- */
 .site-footer { border-top: 1px solid var(--color-border); padding: 40px 0; }
 .footer-inner {
