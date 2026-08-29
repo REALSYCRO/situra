@@ -78,7 +78,7 @@ form.addEventListener('submit', async (event) => {
     }
   } catch (error) {
     formStatus.style.color = '#dc2626';
-    formStatus.textContent = 'Leider ist etwas schiefgelaufen. Schreiben Sie uns gerne direkt an kontakt@klarwerk.de.';
+    formStatus.textContent = 'Leider ist etwas schiefgelaufen. Schreiben Sie uns gerne direkt an kontakt@situra.org.';
   } finally {
     submitButton.disabled = false;
   }

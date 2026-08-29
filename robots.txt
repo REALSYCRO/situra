@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /demos/
 
-Sitemap: https://www.klarwerk.de/sitemap.xml
+Sitemap: https://www.situra.org/sitemap.xml
