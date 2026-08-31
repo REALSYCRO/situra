@@ -87,8 +87,23 @@ h3 { font-size: 1.2rem; font-style: italic; color: var(--color-primary-dark); }
 .hero-lead { color: var(--color-text-muted); max-width: 46ch; margin-bottom: 32px; font-size: 1.05rem; }
 .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
 
-.hero-visual { display: flex; align-items: center; justify-content: center; }
+.hero-visual { position: relative; display: flex; align-items: center; justify-content: center; }
 .cup-mock { position: relative; width: 220px; height: 220px; }
+
+.floaty {
+  position: absolute;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.floaty-1 { top: 8px; right: -8px; }
+.floaty-2 { bottom: 16px; left: -20px; }
+@media (max-width: 480px) { .floaty { display: none; } }
 .cup {
   position: absolute; bottom: 0; left: 30px; width: 160px; height: 130px;
   background: linear-gradient(160deg, var(--color-primary), var(--color-primary-dark));
@@ -109,6 +124,25 @@ h3 { font-size: 1.2rem; font-style: italic; color: var(--color-primary-dark); }
 .section-head { max-width: 620px; margin: 0 auto 48px; text-align: center; }
 .section-head .eyebrow { justify-content: center; }
 .section-lead { color: var(--color-text-muted); margin-top: 12px; }
+.section-note { color: var(--color-text-muted); font-size: 0.82rem; font-style: italic; margin-top: 10px; }
+
+.grid { display: grid; gap: 22px; }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+
+.testimonial {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.testimonial:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.testimonial p { font-size: 0.98rem; font-style: italic; }
+.testimonial footer { display: flex; flex-direction: column; }
+.testimonial footer span { color: var(--color-text-muted); font-size: 0.85rem; }
 
 .menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
 .menu-col h3 { margin-bottom: 18px; }
@@ -169,4 +203,5 @@ h3 { font-size: 1.2rem; font-style: italic; color: var(--color-primary-dark); }
   .menu-grid { grid-template-columns: 1fr; gap: 36px; }
   .about-split { grid-template-columns: 1fr; }
   .kontakt-grid { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr; }
 }
