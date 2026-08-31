@@ -149,6 +149,12 @@ h3 { font-size: 1.1rem; }
 .testimonial footer { display: flex; flex-direction: column; }
 .testimonial footer span { color: var(--color-text-muted); font-size: 0.85rem; }
 
+.visit-row { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
+.visit-step { flex: 1 1 220px; max-width: 280px; text-align: center; padding: 8px 12px; }
+.visit-icon { display: block; font-size: 2rem; margin-bottom: 12px; }
+.visit-step h3 { margin-bottom: 6px; }
+.visit-step p { color: var(--color-text-muted); font-size: 0.9rem; }
+
 .team-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 28px; text-align: center; transition: transform 0.2s ease, box-shadow 0.2s ease; }
 .team-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 .team-avatar {

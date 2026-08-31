@@ -124,6 +124,24 @@ h3 { font-size: 1.15rem; }
 .floaty-2 { bottom: 18px; left: -18px; }
 @media (max-width: 480px) { .floaty { display: none; } }
 
+.hero-caption { text-align: center; margin-top: 14px; font-size: 0.85rem; color: var(--color-text-muted); font-style: italic; }
+
+.material-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; list-style: none; }
+.material-swatch {
+  height: 130px; border-radius: var(--radius-md); position: relative; overflow: hidden;
+  box-shadow: var(--shadow-sm); transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.material-swatch:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.material-swatch span {
+  position: absolute; bottom: 10px; left: 12px; color: #fff; font-weight: 700; font-size: 0.9rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+.swatch-eiche { background: repeating-linear-gradient(100deg, #d9b47c 0 10px, #c9a66b 10px 20px); }
+.swatch-nuss { background: repeating-linear-gradient(100deg, #6f4720 0 9px, #5c3a1c 9px 18px); }
+.swatch-laerche { background: repeating-linear-gradient(100deg, #a9754a 0 11px, #96633a 11px 22px); }
+.swatch-esche { background: repeating-linear-gradient(100deg, #e8d4b0 0 8px, #d9c19a 8px 16px); }
+.swatch-esche span { color: #3a2b18; text-shadow: none; }
+
 .section { padding: 88px 0; }
 .section-alt { background: var(--color-bg-alt); }
 .section-head { max-width: 620px; margin: 0 auto 48px; text-align: center; }
@@ -210,4 +228,5 @@ h3 { font-size: 1.15rem; }
 }
 @media (max-width: 560px) {
   .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .material-strip { grid-template-columns: 1fr 1fr; }
 }
